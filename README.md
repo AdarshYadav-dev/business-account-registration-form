@@ -1,9 +1,7 @@
 # 🚀 Business Account Registration Platform
 Manual business account onboarding processes are time-consuming, error-prone, and lack validation. This form automates it with proper validations, file uploads, compliance checks, and database storage.
 
-A full-stack, production-grade Business Account Creation and Onboarding Systemthat ensures smooth KYC compliance, secure data handling, and robust client registration—built using HTML, CSS, JavaScript (frontend) and Node.js, Express.js, MongoDB (backend) following MVC architecture.
-
-![UI Screenshot](<img width="1141" height="889" alt="image" src="https://github.com/user-attachments/assets/03f5f7d8-3aa7-4ef9-a269-c30e59d9a907" />) 
+A full-stack, production-grade Business Account Creation and Onboarding Systemthat ensures smooth KYC compliance, secure data handling, and robust client registration—built using HTML, CSS, JavaScript (frontend) and Node.js, Express.js, MongoDB (backend) following MVC architecture. 
 
 ---
 
@@ -132,13 +130,14 @@ Full Stack Developer | MERN Stack | Passionate about scalable systems
 ## 🌐 Socials:
 ---
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adarsh-yadav--7aa9a1276/)
+<br>
 
 <img width="624" height="903" alt="image" src="https://github.com/user-attachments/assets/9fb9032b-7d09-4bb9-8e14-0383d5eabebf" />
-
+<br>
 <img width="601" height="952" alt="image" src="https://github.com/user-attachments/assets/58342bba-cd17-4ee0-8efa-b9d4c1b362e1" />
-
+<br>
 <img width="604" height="888" alt="image" src="https://github.com/user-attachments/assets/71e7053d-6464-45c6-9557-6cee41c58022" />
-
+<br>
 <img width="637" height="617" alt="image" src="https://github.com/user-attachments/assets/fdb5c341-f46c-4754-bf3f-1775f6f52bbd" />
 
 
