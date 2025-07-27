@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Account Creation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create a Business Account</h1>
+        <form id="businessForm" enctype="multipart/form-data" action="http://localhost:8080/api/business" method="POST">
+             <!-- buiness information -->
+            <fieldset>
+                <legend>Business Information</legend>
+
+                 <!-- name of business  -->
+                <label for="businessName">Business Name (required):</label>
+                <input type="text" id="businessName" name="businessName" required>
+
+
+                 <!-- type of bussiness entitiy -->
+                <label for="businessType">Business Type (required):</label>
+                <select id="businessType" name="businessType" required>
+                    <option value="">Select...</option>
+                    <option value="LLC">LLC</option>
+                    <option value="Corporation">Corporation</option>
+                    <option value="Sole Proprietor">Sole Proprietor</option>
+                    <option value="Nonprofit">Nonprofit</option>
+                </select>
+
+                
+                 <!-- industy business operates -->
+                <label for="industry">Industry (required):</label>
+                <input type="text" id="industry" name="industry" required>
+
+    
+                 <!-- optional description about the business -->
+                <label for="businessDescription">Business Description (optional):</label>
+                <textarea id="businessDescription" name="businessDescription" minlength="10" maxlength="500"></textarea>
+
+            
+                 <!-- option year when business was founded -->
+                <label for="yearEstablished">Year Established (optional):</label>
+                <input type="number" id="yearEstablished" name="yearEstablished" min="1800" max="2025">
+
+                
+                 <!-- optional empoyee count range -->
+                <label for="numberOfEmployees">Number of Employees (optional):</label>
+                <select id="numberOfEmployees" name="numberOfEmployees">
+                    <option value="">Select...</option>
+                    <option value="1-10">1-10</option>
+                    <option value="11-50">11-50</option>
+                    <option value="51-200">51-200</option>
+                    <option value="200+">200+</option>
+                </select>
+            </fieldset>
+
+             <!-- contact details -->
+            <fieldset>
+                <legend>Contact Details</legend>
+
+                <label for="businessEmail">Business Email (required):</label>
+                <input type="email" id="businessEmail" name="businessEmail" required>
+
+                <label for="businessPhone">Business Phone (required):</label>
+                <input type="tel" id="businessPhone" name="businessPhone" required>
+
+            
+                <label for="businessWebsite">Business Website (optional):</label>
+                <input type="url" id="businessWebsite" name="businessWebsite">
+            </fieldset>
+
+
+             <!-- address -->
+            <fieldset>
+                <legend>Address</legend>
+        
+                <label for="businessAddress">Business Address (required):</label>
+                <input type="text" id="businessAddress" name="businessAddress" required>
+
+                <label for="city">City (required):</label>
+                <input type="text" id="city" name="city" required>
+
+            
+                <label for="state">State/Province (required):</label>
+                <select id="state" name="state" required>
+                    <option value="">Select...</option>
+                    <option value="State1">State1</option>
+                    <option value="State2">State2</option>
+                </select>
+
+    
+                <label for="postalCode">Postal Code (required):</label>
+                <input type="text" id="postalCode" name="postalCode" pattern="^[1-9][0-9]{5}$" required>
+
+         
+                <label for="country">Country (required):</label>
+                <select id="country" name="country" required>
+                    <option value="">Select...</option>
+                    <option value="Country1">Country1</option>
+                    <option value="Country2">Country2</option>
+                </select>
+            </fieldset>
+
+
+             <!-- authorized Representative -->
+            <fieldset>
+                <legend>Authorized Representative</legend>
+   
+                <label for="contactName">Contact Name (required):</label>
+                <input type="text" id="contactName" name="contactName" required>
+
+             
+                <label for="contactEmail">Contact Email (required):</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+
+     
+                <label for="contactPhone">Contact Phone (required):</label>
+                <input type="tel" id="contactPhone" name="contactPhone" required>
+
+           
+                <label for="positionTitle">Position/Title (required):</label>
+                <input type="text" id="positionTitle" name="positionTitle" required>
+
+
+                <label for="idType">ID Type:</label>
+                <select id="idType" name="idType">
+                    <option value="">Select...</option>
+                    <option value="Passport">Passport</option>
+                    <option value="Driver’s License">Driver’s License</option>
+                    <option value="National ID">National ID</option>
+                </select>
+
+           
+                <label for="idNumber">ID Number (required):</label>
+                <input type="text" id="idNumber" name="idNumber" required>
+            </fieldset>
+
+
+             <!-- file upload secitn -->
+            <fieldset>
+                <legend>File Uploads</legend>
+  
+                <label for="businessRegistration">Business Registration Document (required):</label>
+                <input type="file" id="businessRegistration" name="businessRegistration" accept=".pdf,.jpg,.png" required>
+
+                <label for="taxIdentification">Tax Identification Document (optional):</label>
+                <input type="file" id="taxIdentification" name="taxIdentification" accept=".pdf,.jpg,.png">
+
+     
+                <label for="authorizedRepId">Authorized Rep ID Document (required):</label>
+                <input type="file" id="authorizedRepId" name="authorizedRepId" accept=".pdf,.jpg,.png" required>
+
+     
+                <label for="proofOfAddress">Proof of Address (optional):</label>
+                <input type="file" id="proofOfAddress" name="proofOfAddress" accept=".pdf,.jpg,.png">
+            </fieldset>
+
+            
+             <!-- compliance kyc -->
+            <fieldset>
+                <legend>Compliance/KYC</legend>
+         
+                <label for="tin">Tax Identification Number (TIN/EIN) (required):</label>
+                <input type="text" id="tin" name="tin" required pattern="\d{9}">
+
+
+                <label for="vatNumber">VAT/GST Number (optional):</label>
+                <input type="text" id="vatNumber" name="vatNumber">
+
+                <label>Is the business publicly traded?</label>
+                <label><input type="radio" name="publiclyTraded" value="yes"> Yes</label>
+                <label><input type="radio" name="publiclyTraded" value="no"> No</label>
+
+      
+                <label>Does your business operate internationally?</label>
+                <label><input type="radio" name="international" value="yes"> Yes</label>
+                <label><input type="radio" name="international" value="no"> No</label>
+
+           
+                <label><input type="checkbox" name="terms" required> Agree to Terms and Conditions (required)</label>
+                <label><input type="checkbox" name="privacy" required> Agree to Privacy Policy (required)</label>
+            </fieldset>
+
+             <!-- sbmit button -->
+            <button type="submit" id="submitBtn">Submit</button>
+            <div id="loading" style="display:none;">Loading...</div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
