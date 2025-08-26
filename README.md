@@ -1,7 +1,8 @@
 # 🚀 Business Account Registration Platform
 Manual business account onboarding processes are time-consuming, error-prone, and lack validation. This form automates it with proper validations, file uploads, compliance checks, and database storage.
 
-A full-stack, production-grade Business Account Creation and Onboarding Systemthat ensures smooth KYC compliance, secure data handling, and robust client registration—built using HTML, CSS, JavaScript (frontend) and Node.js, Express.js, MongoDB (backend) following MVC architecture.
+A full-stack, production-grade Business Account Creation and Onboarding Systemthat ensures smooth KYC compliance, secure data handling, and robust client registration—built using HTML, CSS, JavaScript (frontend) and Node.js, Express.js, MongoDB (backend) following MVC architecture..
+
 
 ---
 
